@@ -1,0 +1,7 @@
+<?php
+
+
+exec('useradd -d /domains/new1 -p password newuser')
+
+
+

@@ -94,7 +94,7 @@
 
 </div>  <!-- /container -->
     
-    <!-- Social links. @TODO: replace by link/instructions in template -->
+    <!-- Social links. -->
     <section id="social">
         <div class="container">
             <div class="wrapper clearfix">
