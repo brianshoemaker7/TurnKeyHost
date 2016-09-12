@@ -1,7 +1,9 @@
 <?php
 
 
-exec('sudo useradd -p password newuser');
+exec('sudo useradd -d /domains/new -p password newuser');
+
+
 
 
 
