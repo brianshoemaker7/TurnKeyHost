@@ -44,7 +44,7 @@
 
                     <!-- Authentication Links -->
                     @if (Auth::guest())
-                      <li class="active"><a class="btn" href="login">SIGN IN / SIGN UP</a></li>
+                      <li class="active"><a class="btn" href="login">Login / Register</a></li>
                     @else 
                       <li class="active"><a href=""> {{ Auth::user()->name }} </a></li>
                     @endif
@@ -71,8 +71,7 @@
                         <div class="widget-body">
                             <p>321-200-5597<br>
                                 <a href="mailto:#">me@brianshoemaker.info</a><br>
-                                <br>
-                                2538 Woods Edge Circle, Orlando, FL 32817
+                                2538 Woods Edge Circle, <br>Orlando, FL 32817
                             </p>    
                         </div>
                     </div>
