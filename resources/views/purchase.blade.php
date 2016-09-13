@@ -8,7 +8,7 @@
 
         <ol class="breadcrumb">
             <li><a href="/">Home</a></li>
-            <li class="active">Registration</li>
+            <li class="active">Purchase</li>
         </ol>
 
         <div class="row">
@@ -16,7 +16,7 @@
             <!-- Article main content -->
             <article class="col-xs-12 maincontent">
                 <header class="page-header">
-                    <h1 class="page-title">Registration</h1>
+                    <h1 class="page-title">Purchase</h1>
                 </header>
                 
                 <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
@@ -24,7 +24,7 @@
                         <div class="panel-body">
                         <h3 class="thin text-center">Register a new account</h3>
                             <p class="text-center text-muted">If you have already registered, please <a href="/login">Login</a> here.</p><br>
-                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
+                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/purchase') }}">
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
@@ -84,9 +84,49 @@
                         </div>
 
                         <div class="form-group">
+                            <label for="domain" class="col-md-4 control-label">Domain Name</label>
+
+                            <div class="col-md-6">
+                                <input id="domain" type="text" class="form-control" name="domain" required>
+                            </div>
+                        </div>
+
+                         <div class="form-group">
+                            <label for="street" class="col-md-4 control-label">Street Address</label>
+
+                            <div class="col-md-6">
+                                <input id="street" type="text" class="form-control" name="street" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="city" class="col-md-4 control-label">City</label>
+
+                            <div class="col-md-6">
+                                <input id="city" type="text" class="form-control" name="city"  required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="state" class="col-md-4 control-label">State</label>
+
+                            <div class="col-md-6">
+                                <input id="state" type="text" class="form-control" name="state"  required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="zip" class="col-md-4 control-label">Zipcode</label>
+
+                            <div class="col-md-6">
+                                <input id="zip" type="text" class="form-control" name="zip"  required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary">
-                                    Register
+                                    Purchase Now
                                 </button>
                             </div>
                         </div>
