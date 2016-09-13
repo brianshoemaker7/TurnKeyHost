@@ -46,7 +46,7 @@
                     @if (Auth::guest())
                       <li class="active"><a class="btn" href="login">SIGN IN / SIGN UP</a></li>
                     @else 
-                      <li class="active"><a href="#" > {{ Auth::user()->name }} </a></li>
+                      <li class="active"><a href="" > {{ Auth::user()->name }} </a></li>
                     @endif
                 </ul>
                 
