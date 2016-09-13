@@ -46,7 +46,7 @@
                     @if (Auth::guest())
                       <li class="active"><a class="btn" href="login">SIGN IN / SIGN UP</a></li>
                     @else 
-                      <li class="active"><a href="" > {{ Auth::user()->name }} </a></li>
+                      <li class="active"><a href=""> {{ Auth::user()->name }} </a></li>
                     @endif
                 </ul>
                 
@@ -106,7 +106,7 @@
                     <div class="col-md-6 widget">
                         <div class="widget-body">
                             <p class="simplenav">
-                                <a href="#">Home</a> | 
+                                <a href="/">Home</a> | 
                                 <a href="/plans.html">About</a> |
                                 <a href="/contact">Contact</a> |
                                 <b><a href="/register">Sign up</a></b>

@@ -49,7 +49,7 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav pull-right">
                     <li class="active"><a href="#">Home</a></li>
-                    <li><a href=/plans">Plans</a></li>
+                    <li><a href="/plans">Plans</a></li>
                     <li><a href="/contact">Contact</a></li>
                     
                      <!-- Authentication Links -->
@@ -223,9 +223,9 @@
                         <div class="widget-body">
                             <p class="simplenav">
                                 <a href="#">Home</a> | 
-                                <a href="about.html">About</a> |
-                                <a href="contact.html">Contact</a> |
-                                <b><a href="signup.html">Sign up</a></b>
+                                <a href="/plans">Plans</a> |
+                                <a href="/contact">Contact</a> |
+                                <b><a href="/login">Sign up</a></b>
                             </p>
                         </div>
                     </div>
