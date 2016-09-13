@@ -47,6 +47,21 @@
                       <li class="active"><a class="btn" href="login">Login / Register</a></li>
                     @else 
                       <li class="active"><a href=""> {{ Auth::user()->name }} </a></li>
+                      <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                {{ Auth::user()->name }} <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu" role="menu">
+                                <li>
+                                    <a href="{{ url('/logout') }}"
+                                        onclick="event.preventDefault();
+                                                 document.getElementById('logout-form').submit();">
+                                        Logout
+                                    </a>
+
+                                    <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
+                                        {{ csrf_field() }}
                     @endif
                 </ul>
                 
@@ -71,7 +86,7 @@
                         <div class="widget-body">
                             <p>321-200-5597<br>
                                 <a href="mailto:#">me@brianshoemaker.info</a><br>
-                                2538 Woods Edge Circle, <br>Orlando, FL 32817
+                                2538 Woods Edge Circle <br>Orlando, FL 32817
                             </p>    
                         </div>
                     </div>
