@@ -46,7 +46,6 @@
                     @if (Auth::guest())
                       <li class="active"><a class="btn" href="login">Login / Register</a></li>
                     @else 
-                      <li class="active"><a href=""> {{ Auth::user()->name }} </a></li>
                       <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                 {{ Auth::user()->name }} <span class="caret"></span>
@@ -59,7 +58,6 @@
                                                  document.getElementById('logout-form').submit();">
                                         Logout
                                     </a>
-
                                     <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
                                         {{ csrf_field() }}
                     @endif
