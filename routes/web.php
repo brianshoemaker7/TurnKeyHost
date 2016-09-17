@@ -43,5 +43,5 @@ Route::get('/home', 'HomeController@index');
 
 Route::resource('new_setups', 'NewSetupController');
 
-Route::post('/purchase', 'UserController');
+Route::post('/purchase', 'NewSetupController');
 

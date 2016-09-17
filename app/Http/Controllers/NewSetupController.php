@@ -43,7 +43,7 @@ class NewController extends Controller
 		$NewSetup->save();
 		return view('/info');
 	}
-    }
+    
 
     /**
      * Store a newly created resource in storage.
