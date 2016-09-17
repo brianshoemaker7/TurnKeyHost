@@ -26,6 +26,7 @@ Route::get('/contact', function() {
 Route::post('/purchase', function() {
 	if (count($_POST) > 0) {
 		printf('<pre>%s</pre>', print_r($_POST, 1));
+		return view ('/info');
 	}
 });
 
@@ -41,7 +42,7 @@ Route::get('/app', function () {
 
 Route::get('/home', 'HomeController@index');
 
-Route::resource('new_setups', 'NewSetupController');
+Route::resource('NewUser', 'NewUserController');
 
-Route::post('/purchase', 'NewSetupController');
+// Route::post('/purchase', 'NewSetupController');
 

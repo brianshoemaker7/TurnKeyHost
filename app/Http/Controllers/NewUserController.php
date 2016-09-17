@@ -29,16 +29,16 @@ class NewUserController extends Controller
     {
        $post_data = $request->all();
 		
-		$NewSetup = new App\NewSetup();
-		$NewSetup->name = $post_data['name'];
-		$NewSetup->email = $post_data['email'];
-		$NewSetup->password = $post_data['password'];
-		$NewSetup->domain = $post_data['domain'];
-		$NewSetup->street = $post_data['street'];
-		$NewSetup->city = $post_data['city'];
-		$NewSetup->state = $post_data['state'];
-		$NewSetup->zipcode = $post_data['zipcode'];
-		$NewSetup->save();
+		$NewUser = new App\NewUser();
+		$NewUser->name = $post_data['name'];
+		$NewUser->email = $post_data['email'];
+		$NewUser->password = $post_data['password'];
+		$NewUser->domain = $post_data['domain'];
+		$NewUser->street = $post_data['street'];
+		$NewUser->city = $post_data['city'];
+		$NewUser->state = $post_data['state'];
+		$NewUser->zipcode = $post_data['zipcode'];
+		$NewUser->save();
 		return view('/info');
 	}
     
