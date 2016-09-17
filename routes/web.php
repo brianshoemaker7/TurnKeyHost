@@ -23,6 +23,12 @@ Route::get('/contact', function() {
 	return view('contact');
 });
 
+Route::post('/purchase', function() {
+	if (count($_POST) > 0) {
+		printf('<pre>%s</pre>', print_r($_POST, 1));
+	}
+});
+
 Route::get('/purchase', function() {
 	return view('purchase');
 });
@@ -35,5 +41,7 @@ Route::get('/app', function () {
 
 Route::get('/home', 'HomeController@index');
 
+Route::resource('new_setups', 'NewSetupController');
 
+Route::post('/purchase', 'UserController');
 

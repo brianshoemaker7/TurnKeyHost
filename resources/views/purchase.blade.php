@@ -22,8 +22,7 @@
                 <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
                     <div class="panel panel-default">
                         <div class="panel-body">
-                        <h3 class="thin text-center">Register a new account</h3>
-                            <p class="text-center text-muted">If you have already registered, please <a href="/login">Login</a> here.</p><br>
+                        <h3 class="thin text-center">Please fill out the form to make setup your new hosting space.</h3>
                     <form class="form-horizontal" role="form" method="POST" action="{{ url('/purchase') }}">
                         {{ csrf_field() }}
 
