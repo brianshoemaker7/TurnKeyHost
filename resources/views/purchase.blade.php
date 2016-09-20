@@ -115,10 +115,10 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="zip" class="col-md-4 control-label">Zipcode</label>
+                            <label for="zipcode" class="col-md-4 control-label">Zipcode</label>
 
                             <div class="col-md-6">
-                                <input id="zip" type="text" class="form-control" name="zip"  required>
+                                <input id="zip" type="text" class="form-control" name="zipcode"  required>
                             </div>
                         </div>
 

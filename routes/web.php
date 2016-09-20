@@ -10,6 +10,7 @@
 | to using a Closure or controller method. Build something great!
 |
 */
+Use App\Accounts;
 
 Route::get('/', function () {
     return view('welcome');
@@ -23,16 +24,21 @@ Route::get('/contact', function() {
 	return view('contact');
 });
 
-Route::post('/purchase', function() {
-	if (count($_POST) > 0) {
-		printf('<pre>%s</pre>', print_r($_POST, 1));
-		
-	}
-});
+// Route::post('/purchase', function() {
+// 	if (count($_POST) > 0) {
+// 		printf('<pre>%s</pre>', print_r($_POST, 1));
+// 		return view ('/info');
+// 		Accounts::create(['name'=>'name','email'=>'email', 'password'=>'password', 'domain'=>'domain', 'street'=>'street', 'city'=>'city', 'state'=>'state', 'zipcode'=>'32817',]);
 
-Route::get('/purchase', function() {
-	return view('purchase');
-});
+// 		return view('confirmation');
+// 	}
+// });
+
+// Route::post('Accounts', '')
+
+// Route::get('/purchase', function() {
+// 	return view('purchase');
+// });
 
 Auth::routes();
 
@@ -42,7 +48,10 @@ Route::get('/app', function () {
 
 Route::get('/home', 'HomeController@index');
 
-Route::resource('NewUser', 'NewUserController');
 
-// Route::post('/purchase', 'NewSetupController');
+Route::resource('Account', 'AccountController');
 
+
+Route::get('/confirmation', function () {
+	return view('confirmation');
+});

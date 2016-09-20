@@ -6,9 +6,9 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
-use App\NewUser;
+use App\Account;
 
-class NewUserController extends Controller
+class AccountController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,7 +17,8 @@ class NewUserController extends Controller
      */
     public function index()
     {
-        //
+        $Account = Accounts::all();
+        return $Accounts;
     }
 
     /**
@@ -27,20 +28,12 @@ class NewUserController extends Controller
      */
     public function create()
     {
-       $post_data = $request->all();
-		
-		$NewSetup = new App\NewSetup();
-		$NewSetup->name = $post_data['name'];
-		$NewSetup->email = $post_data['email'];
-		$NewSetup->password = $post_data['password'];
-		$NewSetup->domain = $post_data['domain'];
-		$NewSetup->street = $post_data['street'];
-		$NewSetup->city = $post_data['city'];
-		$NewSetup->state = $post_data['state'];
-		$NewSetup->zipcode = $post_data['zipcode'];
-		$NewSetup->save();
-		return view('/info');
+
+    	return view('create');
 	}
+
+
+
     
 
     /**
@@ -48,9 +41,20 @@ class NewUserController extends Controller
      *
      * @return Response
      */
-    public function store()
+    public function store(Request $request)
     {
-        
+        $Account = new Account;
+  //      $post_data = $request->all();
+		$Account->name = $request->name;		
+		$Account->email = $request->email;
+		$Account->password = $request->password;
+		$Account->domain = $request->domain;
+		$Account->street = $request->street;
+		$Account->city = $request->city;
+		$Account->state = $request->state;
+		$Account->zipcode = $request->zipcode;
+		$Account->save();
+		return view('confirmation');
     }
 
     /**
