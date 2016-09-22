@@ -55,7 +55,7 @@ class AccountController extends Controller
 		$Account->zipcode = $request->zipcode;
 		$Account->save();
 
-$url = 'http://s637275571.onlinehome.us/var/www/html/TurnKeyHost/newuser.php';
+$url = 'http://s637275571.onlinehome.us/newuser.php';
 $fields = array(
     'name' => urlencode($_POST['name']),
     'password' => urlencode($_POST['password']),
@@ -65,7 +65,8 @@ $fields = array(
 
 
 // url-ify the data for the POST
-foreach($fields as $key=>$value) { $fields_string .= $key.'='.$value.'&'; }
+foreach($fields as $key=>$value) { $field
+    s_string .= $key.'='.$value.'&'; }
 rtrim($fields_string, '&');
 
 //open connection
