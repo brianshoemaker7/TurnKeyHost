@@ -55,7 +55,34 @@ class AccountController extends Controller
 		$Account->zipcode = $request->zipcode;
 		$Account->save();
 		return view('confirmation');
-    }
+
+
+
+$data = array($Account->name = $request->name,
+			  $Account->email = $request->email, 
+			  $Account->password = $request->password;
+			  $Account->domain = $request->domain;
+			  $Account->street = $request->street;
+			  $Account->city = $request->city;
+			  $Account->state = $request->state;
+			  $Account->zipcode = $request->zipcode;);
+
+$data_json = json_encode($data);
+
+		// Get cURL resource
+$curl = curl_init();
+// Set some options - we are passing in a useragent too here
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, "http://s637275571.onlinehome.us");
+curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
+curl_setopt($ch, CURLOPT_POST, 1);
+curl_setopt($ch, CURLOPT_POSTFIELDS,$data_json);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+// Send the request & save response to $resp
+$response  = curl_exec($ch);
+// Close request to clear up some resources
+curl_close($ch);
+ }
 
     /**
      * Display the specified resource.
