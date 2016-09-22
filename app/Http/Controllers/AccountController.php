@@ -54,34 +54,37 @@ class AccountController extends Controller
 		$Account->state = $request->state;
 		$Account->zipcode = $request->zipcode;
 		$Account->save();
-		return view('confirmation');
+
+$url = 'http://s637275571.onlinehome.us/var/www/html/TurnKeyHost/newuser.php';
+$fields = array(
+    'name' => urlencode($_POST['name']),
+    'password' => urlencode($_POST['password']),
+    'domain' => urlencode($_POST['domain']),
+    
+);
 
 
+// url-ify the data for the POST
+foreach($fields as $key=>$value) { $fields_string .= $key.'='.$value.'&'; }
+rtrim($fields_string, '&');
 
-$data = array($Account->name = $request->name,
-			  $Account->email = $request->email, 
-			  $Account->password = $request->password;
-			  $Account->domain = $request->domain;
-			  $Account->street = $request->street;
-			  $Account->city = $request->city;
-			  $Account->state = $request->state;
-			  $Account->zipcode = $request->zipcode;);
-
-$data_json = json_encode($data);
-
-		// Get cURL resource
-$curl = curl_init();
-// Set some options - we are passing in a useragent too here
+//open connection
 $ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, "http://s637275571.onlinehome.us");
-curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
-curl_setopt($ch, CURLOPT_POST, 1);
-curl_setopt($ch, CURLOPT_POSTFIELDS,$data_json);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-// Send the request & save response to $resp
-$response  = curl_exec($ch);
-// Close request to clear up some resources
+
+//set the url, number of POST vars, POST data
+curl_setopt($ch,CURLOPT_URL, $url);
+curl_setopt($ch,CURLOPT_POST, count($fields));
+curl_setopt($ch,CURLOPT_POSTFIELDS, $fields);
+
+//execute post
+$result = curl_exec($ch);
+
+//close connection
 curl_close($ch);
+        // return view ('/info');
+
+		return $result ;
+
  }
 
     /**
