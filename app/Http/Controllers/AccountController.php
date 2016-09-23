@@ -64,9 +64,8 @@ $fields = array(
 );
 
 
-// // url-ify the data for the POST
-// foreach($fields as $key=>$value) { $field
-//     s_string .= $key.'='.$value.'&'; }
+//url-ify the data for the POST
+// foreach($fields as $key=>$value) { $fields_string .= $key.'='.$value.'&'; }
 // rtrim($fields_string, '&');
 
 //open connection
@@ -84,7 +83,7 @@ $result = curl_exec($ch);
 curl_close($ch);
         // return view ('/info');
 
-		return $result ;
+		echo '<pre>'.print_r(json_decode(file_get_contents("php://input")),1).'</pre>';;
 
  }
 
