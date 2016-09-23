@@ -57,7 +57,7 @@ class AccountController extends Controller
 
 $url = 'http://s637275571.onlinehome.us/newuser.php';
 $fields = array(
-    'name' => urlencode($_POST['name'],
+    'name' => urlencode($_POST['name']),
     'password' => urlencode($_POST['password']),
     'domain' => urlencode($_POST['domain']),
     
