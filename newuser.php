@@ -1,6 +1,10 @@
 <?php
 
-echo '<pre>'.print_r(json_decode(file_get_contents("php://input")),1).'</pre>';
+// echo '<pre>'.print_r(json_decode(file_get_contents("php://input")),1).'</pre>';
+
+$data = json_decode(file_get_contents("php://input")),1);
+
+echo $data
 
 $name->name; $password->password; $domain->domain;
 
