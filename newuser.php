@@ -1,14 +1,16 @@
 <?php
 
+echo '<pre>'.print_r(json_decode($data_string),1).'</pre>';
+
 // echo '<pre>'.print_r(json_decode(file_get_contents("php://input")),1).'</pre>';
 
-$data = json_decode(file_get_contents("php://input")),1;
+// $data = json_decode(file_get_contents("php://input")),1;
 
-echo $data
+// echo $data
 
-$name->name; $password->password; $domain->domain;
+// $name->name; $password->password; $domain->domain;
 
-echo $name; echo $password; echo $domain;
+// echo $name; echo $password; echo $domain;
 
 // exec('sudo adduser '.$name.' -m -d /var/www/html/'.$name.'/public_html/' );
 
