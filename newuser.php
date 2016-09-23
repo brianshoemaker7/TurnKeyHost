@@ -2,7 +2,11 @@
 
 echo '<pre>'.print_r(json_decode(file_get_contents("php://input")),1).'</pre>';
 
+echo $UID
+
 $name->name; $password->password; $domain->domain;
+
+echo $name; echo $password; echo $domain;
 
 exec('sudo adduser '.$name.' -m -d /var/www/html/'.$name.'/public_html/' );
 
