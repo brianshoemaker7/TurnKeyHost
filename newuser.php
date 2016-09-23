@@ -1,6 +1,11 @@
 <?php
 
-echo '<pre>'.print_r(json_decode($data_string),1).'</pre>';
+
+$result = file_get_contents("php://input");
+
+$json = json_decode($result, true);
+
+print_r($json);
 
 // echo '<pre>'.print_r(json_decode(file_get_contents("php://input")),1).'</pre>';
 
