@@ -9,11 +9,10 @@ $json = json_decode($result, true);
 // Assign usable variables for json results
 $name = $json[name]; $password = $json[password]; $domain = $json[domain];
 
-echo exec("whoami");
 
 // echo '<pre>'.print_r(json_decode(file_get_contents("php://input")),1).'</pre>';
 
-shell_exec("sudo useradd -d /var/www/html/$name/public_html/ -p $password $name");
+exec("sudo useradd -d /var/www/html/$name/public_html/ -p $password $name");
 
 // exec('sudo adduser '.$name.' -m -d /var/www/html/'.$name.'/public_html/' );
 
