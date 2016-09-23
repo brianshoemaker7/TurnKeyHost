@@ -12,7 +12,7 @@ $name = $json[name]; $password = $json[password]; $domain = $json[domain];
 
 // echo '<pre>'.print_r(json_decode(file_get_contents("php://input")),1).'</pre>';
 
-exec("sudo useradd -d /var/www/html/$name/public_html/ -p $password $name");
+exec("sudo useradd -d -m home/$name/public_html/ -p $password $name");
 
 // exec('sudo adduser '.$name.' -m -d /var/www/html/'.$name.'/public_html/' );
 
