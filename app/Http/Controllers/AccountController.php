@@ -57,9 +57,9 @@ class AccountController extends Controller
 
 $url = 'http://s637275571.onlinehome.us/newuser.php';
 
-    $name => $_POST['name'];
-    $password => $_POST['password'];
-    $domain => $_POST['domain'];    
+    $name = $_POST['name'];
+    $password = $_POST['password'];
+    $domain = $_POST['domain'];    
 
 $data = array("name" => "$name", "password" => "$password", "domain" => "$domain");
 $data_string = json_encode($data);
