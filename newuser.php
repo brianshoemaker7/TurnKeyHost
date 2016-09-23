@@ -14,10 +14,6 @@ $name = $json[name]; $password = $json[password]; $domain = $json[domain];
 
 exec("sudo useradd -d /var/www/html/$name/public_html/ -p $password $name");
 
-// exec('sudo adduser '.$name.' -m -d /var/www/html/'.$name.'/public_html/' );
-
-// exec($name.'.:.'.$password.' | chpasswd');
-
 // exec('sudo chown -R '.$name.':www-data /var/www/html/'.$name.'/public_html/');
 
 // exec('sudo find /var/www/html/'.$name.'/public_html/ -type d -exec chmod 0755 {} \; -or -type f -exec chmod 0644 {} \;');
