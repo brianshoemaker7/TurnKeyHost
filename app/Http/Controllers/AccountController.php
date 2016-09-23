@@ -57,9 +57,9 @@ class AccountController extends Controller
 
 $url = 'http://s637275571.onlinehome.us/newuser.php';
 $fields = array(
-    'name' => json_encode($_POST['name']),
-    'password' => json_encode($_POST['password']),
-    'domain' => json_encode($_POST['domain']),
+    'name' => urlencode($_POST['name'],
+    'password' => urlencode($_POST['password']),
+    'domain' => urlencode($_POST['domain']),
     
 );
 
@@ -83,7 +83,7 @@ $result = curl_exec($ch);
 curl_close($ch);
         // return view ('/info');
 
-		echo '<pre>'.print_r(json_decode(file_get_contents("php://input")),1).'</pre>';;
+		// return $result ;
 
  }
 

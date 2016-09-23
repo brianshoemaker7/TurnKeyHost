@@ -1,8 +1,11 @@
 <?php
 
-echo '<pre>'.print_r(json_decode(file_get_contents("php://input")),1).'</pre>';
+echo '<pre>'.print_r($_POST)),1).'</pre>';
 
 print_r($_POST);
 
 echo "this works";
+
+print_r($_POST['name']);
+
 
