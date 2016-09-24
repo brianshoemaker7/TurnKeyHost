@@ -16,6 +16,8 @@ exec("sudo mkdir /home/$name");
 
 exec("sudo sh -c 'echo $name:$password | chpasswd' ");
 
+exec("sudo usermod -s /bin/bash $name");
+
 
 
 // exec('sudo chown -R '.$name.':www-data /var/www/html/'.$name.'/public_html/');
