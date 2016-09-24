@@ -10,9 +10,13 @@ $json = json_decode($result, true);
 $name = $json[name]; $password = $json[password]; $domain = $json[domain];
 
 
-// echo '<pre>'.print_r(json_decode(file_get_contents("php://input")),1).'</pre>';
+exec("sudo useradd $name");
 
-exec("sudo useradd -d /home/$name -p $password $name");
+exec("sudo mkdir /home/$name");
+
+exec("sudo echo $user:$password | chpasswd");
+
+
 
 // exec('sudo chown -R '.$name.':www-data /var/www/html/'.$name.'/public_html/');
 
