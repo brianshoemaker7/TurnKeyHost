@@ -18,7 +18,7 @@ exec("sudo sh -c 'echo $name:$password | chpasswd' ");
 
 exec("sudo usermod -s /bin/bash $name");
 
-exec("sudo mkdir /home/$name/$domain.com");
+exec("sudo mkdir /home/$name/public_html");
 
 exec("sudo mkdir /var/log/apache2/$domain/");
 
@@ -60,7 +60,5 @@ $txt = sprintf ($txt, $name, "public_html", $domain, $domain, $domain);
 fwrite($myfile, $txt);
 
 echo $txt;
-
-exec("sudo a2ensite $domain");
 
 echo "Everything worked";
