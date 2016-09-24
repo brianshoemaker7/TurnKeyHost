@@ -55,7 +55,7 @@ CustomLog ${APACHE_LOG_DIR}/%s/access.log combined
 
 EOT;
 
-sprintf ($txt, $user, "public_html", $domain, $domain, $domain);
+$txt = sprintf ($txt, $user, "public_html", $domain, $domain, $domain);
 
 fwrite($myfile, $txt);
 
