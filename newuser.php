@@ -63,6 +63,4 @@ echo $txt;
 
 exec("sudo a2ensite $domain");
 
-exec("sudo service apache2 restart");
-
 echo "Everything worked";
