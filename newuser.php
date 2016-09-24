@@ -45,20 +45,24 @@ AllowOverride All
 
 </Directory>
 
-ErrorLog ${APACHE_LOG_DIR}/%s/error.log
+ErrorLog /var/log/apache2/%s/error.log
 
 LogLevel warn
 
-CustomLog ${APACHE_LOG_DIR}/%s/access.log combined
+CustomLog /var/log/apache2/%s/access.log combined
 
 </VirtualHost>
 
 EOT;
 
-$txt = sprintf ($txt, $user, "public_html", $domain, $domain, $domain);
+$txt = sprintf ($txt, $name, "public_html", $domain, $domain, $domain);
 
 fwrite($myfile, $txt);
 
 echo $txt;
+
+exec("sudo a2ensite $domain");
+
+exec("sudo service apache2 restart");
 
 echo "Everything worked";
