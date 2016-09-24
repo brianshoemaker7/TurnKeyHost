@@ -18,10 +18,47 @@ exec("sudo sh -c 'echo $name:$password | chpasswd' ");
 
 exec("sudo usermod -s /bin/bash $name");
 
+exec("sudo mkdir /home/$name/$domain.com");
 
+exec("sudo mkdir /var/log/apache2/$domain/");
 
-// exec('sudo chown -R '.$name.':www-data /var/www/html/'.$name.'/public_html/');
+exec("sudo touch /var/log/apache2/$domain/error.log");
 
-// exec('sudo find /var/www/html/'.$name.'/public_html/ -type d -exec chmod 0755 {} \; -or -type f -exec chmod 0644 {} \;');
+exec("sudo touch /var/log/apache2/$domain/access.log");
+
+$myfile = fopen("/etc/apache2/sites-enabled/$domain", "w");
+
+$txt = <<<EOT
+# Ensure that Apache listens on port 80
+Listen 80
+<VirtualHost *:80>
+
+DocumentRoot /home/%s/%s
+
+ServerName %s
+
+<Directory />
+
+Options FollowSymLinks
+
+AllowOverride All
+
+</Directory>
+
+ErrorLog ${APACHE_LOG_DIR}/%s/error.log
+
+LogLevel warn
+
+CustomLog ${APACHE_LOG_DIR}/%s/access.log combined
+
+</VirtualHost>
+
+EOT;
+
+sprintf ($txt, $user, "public_html", $domain, $domain, $domain);
+
+fwrite($myfile, $txt);
+
+echo $txt;
 
 echo "Everything worked";
