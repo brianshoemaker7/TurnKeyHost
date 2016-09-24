@@ -14,7 +14,7 @@ exec("sudo useradd $name");
 
 exec("sudo mkdir /home/$name");
 
-exec("sudo echo $user:$password | chpasswd");
+exec("sudo echo $name:$password | chpasswd");
 
 
 
