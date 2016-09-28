@@ -8,7 +8,7 @@
 
         <ol class="breadcrumb">
             <li><a href="/">Home</a></li>
-            <li class="active">Purchase</li>
+            <li class="active">Confirmation</li>
         </ol>
 
         <div class="row">
@@ -16,15 +16,13 @@
             <!-- Article main content -->
             <article class="col-xs-12 maincontent">
                 <header class="page-header">
-                    <h1 class="page-title">It Works!!!!</h1>
+                    <h1 class="page-title">Confirmation</h1>
                 </header>
                 
                 <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
                     <div class="panel panel-default">
                         <div class="panel-body">
-                        <h3 class="thin text-center">Please fill out the form to setup your new hosting space.</h3>
-                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/purchase') }}">
-                        {{ csrf_field() }}
+                        <h3 class="thin text-center">Please retain the following information as you will need to login and upload your files.</h3>
 
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                             <label for="name" class="col-md-4 control-label" >Name</label>

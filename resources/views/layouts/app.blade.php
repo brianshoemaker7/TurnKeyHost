@@ -43,7 +43,7 @@
                     <li><a href="/contact">Contact</a></li>
 
                     <!-- Authentication Links -->
-                    @if (Auth::guest())
+                    <!-- @if (Auth::guest())
                       <li class="active"><a class="btn" href="login">Login / Register</a></li>
                     @else 
                       <li class="dropdown">
@@ -61,7 +61,7 @@
                                     <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
                                         {{ csrf_field() }}
                     @endif
-                </ul>
+                </ul> -->
                 
             </div><!--/.nav-collapse -->
         </div>

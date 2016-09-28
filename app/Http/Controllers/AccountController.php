@@ -55,15 +55,18 @@ class AccountController extends Controller
 		$Account->zipcode = $request->zipcode;
 		$Account->save();
 
+//Assign the variables for curl
 $url = 'http://s637275571.onlinehome.us/newuser.php';
 
     $name = $_POST['name'];
     $password = $_POST['password'];
     $domain = $_POST['domain'];    
 
+//Pass the variables into an array and encode them
 $data = array("name" => "$name", "password" => "$password", "domain" => "$domain");
 $data_string = json_encode($data);
 
+//Begin curl operation by passing in variables and options
 $ch = curl_init($url);
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
 curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
@@ -75,35 +78,13 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, array(
 curl_setopt($ch, CURLOPT_TIMEOUT, 5);
 curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
 
-//execute post
+//Execute post
 $result = curl_exec($ch);
 
-//close connection
+//Close connection
 curl_close($ch);
 
 echo $result;
-
-
-// //url-ify the data for the POST
-// // foreach($fields as $key=>$value) { $fields_string .= $key.'='.$value.'&'; }
-// // rtrim($fields_string, '&');
-
-// //open connection
-// $ch = curl_init();
-
-// //set the url, number of POST vars, POST data
-// curl_setopt($ch,CURLOPT_URL, $url);
-// curl_setopt($ch,CURLOPT_POST, count($fields));
-// curl_setopt($ch,CURLOPT_POSTFIELDS, $fields);
-
-// //execute post
-// $result = curl_exec($ch);
-
-// //close connection
-// curl_close($ch);
-        // return view ('/info');
-
-		// return $result ;
 
  }
 
