@@ -47,7 +47,7 @@
 								<label class="checkbox"><input type="checkbox"> Sign up for newsletter</label>
 							</div>
 							<div class="col-sm-6 text-right">
-								<a class="btn btn-action" role="button" href="/contactconfirm">Send Message<
+								<a class="btn btn-action" role="button" href="/contactconfirm">Send Message</a>
 							</div>
 						</div>
 					</form>
