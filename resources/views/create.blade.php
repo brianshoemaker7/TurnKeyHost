@@ -94,7 +94,7 @@
                             <label for="package" class="col-md-4 control-label">Package</label>
 
                             <div class="col-md-6">
-                                <select id="domain" type="text" class="form-control" name="name" required>
+                                <select id="package" type="text" class="form-control" name="package" required>
                                     <option value="starter">Starter</option>
                                     <option value="business">Business</option>
                                     <option value="enterprise">Enterprise</option>
