@@ -14,6 +14,6 @@ class Account extends Model
      */
    	protected $primaryKey = 'id';
     protected $table = 'accounts';
-    protected $fillable = ['name', 'email', 'password', 'domain', 'street', 'city', 'state', 'zipcode'];
+    protected $fillable = ['name', 'email', 'password', 'domain', 'package'];
 
 };
