@@ -24,6 +24,10 @@ Route::get('/contact', function() {
 	return view('contact');
 });
 
+Route::get('/contactconfirm', function () {
+    return view('contactconfirm');
+});
+
 // Route::post('/purchase', function() {
 // // 	if (count($_POST) > 0) {
 // // 		printf('<pre>%s</pre>', print_r($_POST, 1));
