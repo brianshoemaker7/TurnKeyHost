@@ -30,7 +30,7 @@
 						</ul>	
 					</div><br>
 					<div class="h-body text-center">
-					<p><a class="btn btn-action btn-lg" href="/purchase" role="button">Buy Now</a></p>
+					<p><a class="btn btn-action btn-lg" href="/Account/create" role="button">Buy Now</a></p>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-4 highlight">
@@ -44,7 +44,7 @@
 						</ul>	
 					</div><br>
 					<div class="h-body text-center">
-					<p><a class="btn btn-action btn-lg" href="/purchase" role="button">Buy Now</a></p>
+					<p><a class="btn btn-action btn-lg" href="/Account/create" role="button">Buy Now</a></p>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6 highlight">
@@ -58,7 +58,7 @@
 						</ul>	
 					</div><br>
 					<div class="h-body text-center">
-					<p><a class="btn btn-action btn-lg" href="/purchase" role="button">Buy Now</a></p>
+					<p><a class="btn btn-action btn-lg" href="/Account/create" role="button">Buy Now</a></p>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6 highlight">
@@ -72,7 +72,7 @@
 						</ul>	
 					</div><br>
 					<div class="h-body text-center">
-					<p><a class="btn btn-action btn-lg" href="/purchase" role="button">Buy Now</a></p>
+					<p><a class="btn btn-action btn-lg" href="/Account/create" role="button">Buy Now</a></p>
 					</div>
 				</div>
 			</div> <!-- /row  -->
