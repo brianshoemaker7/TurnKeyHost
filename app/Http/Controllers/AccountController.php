@@ -8,10 +8,6 @@ use App\Http\Requests;
 
 use App\Account;
 
-use Postmark\PostmarkClient;
-
-// require_once('./vendor/autoload.php');
-
 class AccountController extends Controller
 {
     /**
@@ -33,8 +29,8 @@ class AccountController extends Controller
     public function create()
     {
 
-    	return view('create');
-	}
+        return view('create');
+    }
 
 
 
@@ -49,19 +45,22 @@ class AccountController extends Controller
     {
         $Account = new Account;
   //      $post_data = $request->all();
-		$Account->name = $request->name;		
-		$Account->email = $request->email;
-		$Account->password = $request->password;
-		$Account->domain = $request->domain;
-		$Account->package = $request->package;
-		$Account->save();
+        $Account->name = $request->name;        
+        $Account->email = $request->email;
+        $Account->password = $request->password;
+        $Account->domain = $request->domain;
+        $Account->street = $request->street;
+        $Account->city = $request->city;
+        $Account->state = $request->state;
+        $Account->zipcode = $request->zipcode;
+        $Account->save();
 
 //Assign the variables for curl
-
 $url = 'http://s637275571.onlinehome.us/newuser.php';
-$name = $_POST['name'];
-$password = $_POST['password'];
-$domain = $_POST['domain'];    
+
+    $name = $_POST['name'];
+    $password = $_POST['password'];
+    $domain = $_POST['domain'];    
 
 //Pass the variables into an array and encode them
 $data = array("name" => "$name", "password" => "$password", "domain" => "$domain");
@@ -85,30 +84,7 @@ $result = curl_exec($ch);
 //Close connection
 curl_close($ch);
 
-// Send an email with the Postmark-PHP library 
-
-// Create the confirmation subject variable
-$subject = 'Confirmation and Login Instructions';
- 
-// Create the confirmation message variable
-
-$message = 'Hello ' . $name . '. To upload your files you will need the following information. ' . ' Your username is ' . $name .'. Your password is ' . $password . '. You will need to use a FTP client to login with this information. The server name you will use is s637275571.onlinehome.us and if you have any questions regarding setup please refer to the FTP client documentation.';
-
-
-// Example request
-$client = new PostmarkClient("5df721c7-0179-4361-a973-c815e5fd62e7");
-
-$sendResult = $client->sendEmail(
-  "confirmation@brianshoemaker.info",
-  "brianshoemaker7@gmail.com",
-  $subject,
-  $message
-  
-);
-
-echo $result;
-
-return view('confirmation');
+return view('/confirmation');
 
  }
 
