@@ -47,7 +47,7 @@
 								<label class="checkbox"><input type="checkbox"> Sign up for newsletter</label>
 							</div>
 							<div class="col-sm-6 text-right">
-								<input role="button" class="btn btn-action" value="Send message" href="/contactconfirm">
+								<a class="btn btn-action" role="button" href="/contactconfirm">Send Message<
 							</div>
 						</div>
 					</form>
@@ -59,7 +59,7 @@
 			<aside class="col-sm-3 sidebar sidebar-right">
 
 				<div class="widget">
-				<br><br><
+				<br><br><br><br>
 					<h4>Phone</h4>
 					<phone>
 						(321) 200-5597
