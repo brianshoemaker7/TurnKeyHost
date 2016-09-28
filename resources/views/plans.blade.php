@@ -18,9 +18,8 @@
 				<header class="page-header">
 					<h1 class="page-title">Plans</h1>
 				</header>
-				<div class="row">
+				<div class="row"><br><br>
 				<div class="col-md-3 col-sm-4 highlight">
-				<br><br>
 					<div class="h-caption"><h4><i class="fa fa-desktop fa-5"></i>Starter Plan</h4></div><br>
 					<div class="h-body text-left">
 
