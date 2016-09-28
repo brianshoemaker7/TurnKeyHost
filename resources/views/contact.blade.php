@@ -46,13 +46,9 @@
 							<div class="col-sm-6">
 								<label class="checkbox"><input type="checkbox"> Sign up for newsletter</label>
 							</div>
-							<div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
-                                    Submit
-                                </button>
-                            </div>
-                        </div>
+							<div class="col-sm-6 text-right">
+								<input role="button" class="btn btn-action" value="Send message" href="/contactconfirm">
+							</div>
 						</div>
 					</form>
 
@@ -63,7 +59,7 @@
 			<aside class="col-sm-3 sidebar sidebar-right">
 
 				<div class="widget">
-				<br><br><br>
+				<br><br><
 					<h4>Phone</h4>
 					<phone>
 						(321) 200-5597
