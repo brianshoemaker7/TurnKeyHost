@@ -23,9 +23,9 @@
 					<div class="h-caption"><h4><i class="fa fa-desktop fa-5"></i>User Plan</h4></div><br>
 					<div class="h-body text-left">
 						<ul>
-							<li>5GB Storage</li>
+							<li>1GB Storage</li>
 							<li>50GB Transfer</li>
-							<li>Custom Control Panel</li>
+							<li>SSH Access</li>
 							<li>PHP5 Support</li>
 						</ul>	
 					</div><br>
@@ -38,8 +38,8 @@
 					<div class="h-body text-left">
 						<ul>
 							<li>5GB Storage</li>
-							<li>50GB Transfer</li>
-							<li>Custom Control Panel</li>
+							<li>100GB Transfer</li>
+							<li>SSH Access</li>
 							<li>PHP5 Support</li>
 						</ul>	
 					</div><br>
@@ -51,9 +51,9 @@
 					<div class="h-caption"><h4><i class="fa fa-briefcase fa-5"></i>Enterprise Plan</h4></div><br>
 					<div class="h-body text-left">
 						<ul>
-							<li>5GB Storage</li>
-							<li>50GB Transfer</li>
-							<li>Custom Control Panel</li>
+							<li>10GB Storage</li>
+							<li>200GB Transfer</li>
+							<li>SSH Access</li>
 							<li>PHP5 Support</li>
 						</ul>	
 					</div><br>
@@ -65,9 +65,9 @@
 					<div class="h-caption"><h4><i class="fa fa-credit-card fa-5"></i>Reseller Plan</h4></div><br>
 					<div class="h-body text-left">
 						<ul>
-							<li>5GB Storage</li>
-							<li>50GB Transfer</li>
-							<li>Custom Control Panel</li>
+							<li>25GB Storage</li>
+							<li>500GB Transfer</li>
+							<li>SSH Access</li>
 							<li>PHP5 Support</li>
 						</ul>	
 					</div><br>

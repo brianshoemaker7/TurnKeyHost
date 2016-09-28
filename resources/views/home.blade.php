@@ -6,7 +6,7 @@
             <div class="row">
                 <h1 class="lead">HOSTING DONE RIGHT.</h1>
                 <p class="tagline">Because you already have enough things to worry about.</p>
-                <p><a class="btn btn-action btn-lg" role="button">Get Started Now</a></p> 
+                <p><a class="btn btn-action btn-lg" role="button" href="/Account/create">Get Started »</a></p> 
 
 
             </div>
@@ -32,9 +32,9 @@
             
             <div class="row">
                 <div class="col-md-4 col-sm-6 highlight">
-                    <div class="h-caption"><h4><i class="fa fa-cogs fa-5"></i>Custom Control Panel</h4></div>
+                    <div class="h-caption"><h4><i class="fa fa-cogs fa-5"></i>Complete Control</h4></div>
                     <div class="h-body text-center">
-                        <p>We have a proprietary control panel unlike any other out there. It's streamlined for ease of use and completely customizable to meet your needs.</p>
+                        <p>We give you full access to your space. You may install anything you like. </p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 highlight">
@@ -46,7 +46,7 @@
                 <div class="col-md-4 col-sm-6 highlight">
                     <div class="h-caption"><h4><i class="fa fa-heart fa-5"></i>Ease of Use</h4></div>
                     <div class="h-body text-center">
-                        <p>We made the user interface ease to use and understand. No more hunting around and searching for what you need. It's all laid out in an accessible and simple form.</p>
+                        <p>No more frustrations with not being able to fully access your server space. After all, it's yours!</p>
                     </div>
                 </div>
             
@@ -82,14 +82,14 @@
                 </p>
             </div>
             <div class="col-sm-6">
-                <h3>What question will I ask here?</h3>
-                <p>Dicta, nostrum nemo soluta sapiente sit dolor quae voluptas quidem doloribus recusandae facere magni ullam suscipit sunt atque rerum eaque iusto facilis esse nam veniam incidunt officia perspiciatis at voluptatibus.</p>
+                <h3>Do I really have full access to my space?</h3>
+                <p>Yes, you really have full SSH access to the server. Nothing is off limits. AS long as it's compatible with our LAMP stack, you can use it. </p>
             </div>
         </div> <!-- /row -->
 
         <div class="jumbotron top-space">
-            <h4>Dicta, nostrum nemo soluta sapiente sit dolor quae voluptas quidem doloribus recusandae facere magni ullam suscipit sunt atque rerum eaque iusto facilis esse nam veniam incidunt officia perspiciatis at voluptatibus. Libero, aliquid illum possimus numquam fuga.</h4>
-            <p class="text-right"><a class="btn btn-primary btn-large">Learn more »</a></p>
+            <h4>There are very few hosting services out there that can even compare to us. Complete access is the primary reason we started Turn Key Hosting Services. Just like you, we were tired of not being able to fully use the space we were paying for. Click the button below and experience the difference of full server access.</h4>
+            <p class="text-right"><a class="btn btn-primary btn-large">Get Started »</a></p>
         </div>
 
 </div>  <!-- /container -->
