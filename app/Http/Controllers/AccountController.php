@@ -8,6 +8,8 @@ use App\Http\Requests;
 
 use App\Account;
 
+use Postmark\PostmarkClient;
+
 class AccountController extends Controller
 {
     /**
@@ -94,7 +96,8 @@ $subject = 'Confirmation and Login Instructions';
 $message = 'Hello ' . $name . '. To upload your files you will need the following information. ' . ' Your username is ' . $name .'. Your password is ' . $password . '. You will need to use a FTP client to login with this information. The server name you will use is s637275571.onlinehome.us and if you have any questions regarding setup please refer to the FTP client documentation.';
 
 require_once('./vendor/autoload.php');
-use Postmark\PostmarkClient;
+
+
 
 // Example request
 $client = new PostmarkClient("5df721c7-0179-4361-a973-c815e5fd62e7");
