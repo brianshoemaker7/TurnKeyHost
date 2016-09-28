@@ -49,10 +49,7 @@ class AccountController extends Controller
         $Account->email = $request->email;
         $Account->password = $request->password;
         $Account->domain = $request->domain;
-        $Account->street = $request->street;
-        $Account->city = $request->city;
-        $Account->state = $request->state;
-        $Account->zipcode = $request->zipcode;
+        $Account->package = $request->package;
         $Account->save();
 
 //Assign the variables for curl
