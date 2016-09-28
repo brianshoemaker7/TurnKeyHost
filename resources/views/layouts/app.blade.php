@@ -104,7 +104,7 @@
                     <div class="col-md-6 widget">
                         <div class="widget-body">
                             <p class="simplenav">
-                                <a href="#">Home</a> | 
+                                <a href="/">Home</a> | 
                                 <a href="/plans">Plans</a> |
                                 <a href="/contact">Contact</a> 
                         

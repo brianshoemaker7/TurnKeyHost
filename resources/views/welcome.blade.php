@@ -48,7 +48,7 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav pull-right">
-                    <li class="active"><a href="#">Home</a></li>
+                    <li class="active"><a href="/">Home</a></li>
                     <li><a href="/plans">Plans</a></li>
                     <li><a href="/contact">Contact</a></li>
                     
