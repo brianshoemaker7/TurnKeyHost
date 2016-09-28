@@ -26,7 +26,7 @@
 
 
                         <div class="jumbotron top-space">
-            <h4>Thank you for your inquiry. We look forward to meetings your needs or answering any questions you may have.</h4>
+            <h4>Thank you for your inquiry. We look forward to meeting your needs or answering any questions you may have.</h4>
             <p class="text-right"><a class="btn btn-primary btn-large" href="/">Return Home »</a></p>
         </div>
 
