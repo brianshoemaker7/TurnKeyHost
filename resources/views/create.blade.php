@@ -91,6 +91,19 @@
                         </div>
 
                         <div class="form-group">
+                            <label for="package" class="col-md-4 control-label">Package</label>
+
+                            <div class="col-md-6">
+                                <select id="domain" type="text" class="form-control" name="name" required>
+                                    <option value="starter">Starter</option>
+                                    <option value="business">Business</option>
+                                    <option value="enterprise">Enterprise</option>
+                                    <option value="reseller">Reseller</option>
+                                  </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary">
                                     Purchase Now
