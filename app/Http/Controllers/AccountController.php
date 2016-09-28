@@ -8,7 +8,7 @@ use App\Http\Requests;
 
 use App\Account;
 
-use Postmark\PostmarkClient;
+// use Postmark\PostmarkClient;
 
 class AccountController extends Controller
 {
@@ -88,27 +88,27 @@ curl_close($ch);
 
 // Send an email with the Postmark-PHP library 
 
-// Create the confirmation subject variable
-$subject = 'Confirmation and Login Instructions';
+// // Create the confirmation subject variable
+// $subject = 'Confirmation and Login Instructions';
  
-// Create the confirmation message variable
+// // Create the confirmation message variable
 
-$message = 'Hello ' . $name . '. To upload your files you will need the following information. ' . ' Your username is ' . $name .'. Your password is ' . $password . '. You will need to use a FTP client to login with this information. The server name you will use is s637275571.onlinehome.us and if you have any questions regarding setup please refer to the FTP client documentation.';
+// $message = 'Hello ' . $name . '. To upload your files you will need the following information. ' . ' Your username is ' . $name .'. Your password is ' . $password . '. You will need to use a FTP client to login with this information. The server name you will use is s637275571.onlinehome.us and if you have any questions regarding setup please refer to the FTP client documentation.';
 
-require_once('./vendor/autoload.php');
+// require_once('./vendor/autoload.php');
 
 
 
-// Example request
-$client = new PostmarkClient("5df721c7-0179-4361-a973-c815e5fd62e7");
+// // Example request
+// $client = new PostmarkClient("5df721c7-0179-4361-a973-c815e5fd62e7");
 
-$sendResult = $client->sendEmail(
-  "confirmation@brianshoemaker.info",
-  "brianshoemaker7@gmail.com",
-  $subject,
-  $message
+// $sendResult = $client->sendEmail(
+//   "confirmation@brianshoemaker.info",
+//   "brianshoemaker7@gmail.com",
+//   $subject,
+//   $message
   
-);
+// );
 
 echo $result;
 
