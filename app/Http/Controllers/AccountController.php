@@ -10,6 +10,8 @@ use App\Account;
 
 use Postmark\PostmarkClient;
 
+require_once('./vendor/autoload.php');
+
 class AccountController extends Controller
 {
     /**
