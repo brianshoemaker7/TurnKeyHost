@@ -93,7 +93,7 @@
                         <h3 class="widget-title">Follow me</h3>
                         <div class="widget-body">
                             <p class="follow-me-icons clearfix">
-                                <a href=""><i class="fa fa-linkedin fa-2"></i></a>
+                                <a href=""><span class="fa fa-linkedin fa-2"></span></a>
                                 <a href=""><i class="fa fa-github fa-2"></i></a>
                             </p>    
                         </div>
