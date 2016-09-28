@@ -20,7 +20,7 @@
 				</header>
 				<div class="row">
 				<div class="col-md-3 col-sm-4 highlight">
-					<div class="h-caption"><h4><i class="fa fa-desktop fa-5"></i>User Plan</h4></div><br>
+					<div class="h-caption"><h4><i class="fa fa-desktop fa-5"></i>Starter Plan</h4></div><br>
 					<div class="h-body text-left">
 						<ul>
 							<li>1GB Storage</li>
@@ -76,7 +76,7 @@
 					</div>
 				</div>
 			</div> <!-- /row  -->
-				
+				<br><br><br><br><br><br><br><br>
 			</article>
 	
 
