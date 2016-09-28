@@ -46,9 +46,13 @@
 							<div class="col-sm-6">
 								<label class="checkbox"><input type="checkbox"> Sign up for newsletter</label>
 							</div>
-							<div class="col-sm-6 text-right">
-								<a class="btn btn-action" type="submit" value="Send message" href="/contactconfirm">
-							</div>
+							<div class="form-group">
+                            <div class="col-md-6 col-md-offset-4">
+                                <button type="submit" class="btn btn-primary">
+                                    Submit
+                                </button>
+                            </div>
+                        </div>
 						</div>
 					</form>
 
