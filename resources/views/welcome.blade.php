@@ -70,7 +70,7 @@
             <div class="row">
                 <h1 class="lead">HOSTING DONE RIGHT.</h1>
                 <p class="tagline">Because you already have enough things to worry about.</p>
-                <p><a class="btn btn-action btn-lg" role="button" href="/Account/create">Get Started Now »</a></p> 
+                <p><a class="btn btn-action btn-lg" role="button" href="/plans">Get Started Now »</a></p> 
 
 
             </div>
@@ -153,7 +153,7 @@
 
         <div class="jumbotron top-space">
             <h4>There are very few hosting services out there that can even compare to us. Complete access is the primary reason we started Turn Key Hosting Services. Just like you, we were tired of not being able to fully use the space we were paying for. Click the button below and experience the difference of full server access.</h4>
-            <p class="text-right"><a class="btn btn-primary btn-large">Get Started Now »</a></p>
+            <p class="text-right"><a class="btn btn-primary btn-large" href="/plans">Get Started Now »</a></p>
         </div>
 
 </div>  <!-- /container -->

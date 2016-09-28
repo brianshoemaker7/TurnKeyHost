@@ -82,37 +82,21 @@
                             </div>
                         </div>
 
-                         <div class="form-group">
-                            <label for="street" class="col-md-4 control-label">Street Address</label>
-
-                            <div class="col-md-6">
-                                <input id="street" type="text" class="form-control" name="street" required>
-                            </div>
-                        </div>
-
                         <div class="form-group">
-                            <label for="city" class="col-md-4 control-label">City</label>
+                            <label for="package" class="col-md-4 control-label">Package</label>
 
                             <div class="col-md-6">
-                                <input id="city" type="text" class="form-control" name="city"  required>
+                            <select name="package">
+                                  <option value="starter">Starter</option>
+                                  <option value="business">Business</option>
+                                  <option value="enterprise">Enterprise</option>
+                                  <option value="reseller">Reseller</option>
+                                </select>
+                                <input id="package" type="text" class="form-control" required>
                             </div>
                         </div>
 
-                        <div class="form-group">
-                            <label for="state" class="col-md-4 control-label">State</label>
-
-                            <div class="col-md-6">
-                                <input id="state" type="text" class="form-control" name="state"  required>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="zipcode" class="col-md-4 control-label">Zipcode</label>
-
-                            <div class="col-md-6">
-                                <input id="zip" type="text" class="form-control" name="zipcode"  required>
-                            </div>
-                        </div>
+                         
 
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
