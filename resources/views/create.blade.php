@@ -24,6 +24,7 @@
                         <div class="panel-body">
                         <h3 class="thin text-center">Please fill out the form to setup your new hosting space.</h3>
                     <form class="form-horizontal" role="form" method="POST" action="{{ url('Account') }}">
+                    {{ csrf_field() }}
                        
 
                         <div class="form-group">
