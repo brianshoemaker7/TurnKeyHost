@@ -193,17 +193,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3 widget">
-                        <h3 class="widget-title">Follow me</h3>
-                        <div class="widget-body">
-                            <p class="follow-me-icons clearfix">
-                                <a href=""><i class="fa fa-linkedin fa-2"></i></a>
-                                <a href=""><i class="fa fa-github fa-2"></i></a>
-                            </p>    
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 widget">
+                    <div class="col-md-9 widget">
                         <h3 class="widget-title">More Information</h3>
                         <div class="widget-body">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, dolores, quibusdam architecto voluptatem amet fugiat nesciunt placeat provident cumque accusamus itaque voluptate modi quidem dolore optio velit hic iusto vero praesentium repellat commodi ad id expedita cupiditate repellendus possimus unde?</p>
@@ -224,8 +214,8 @@
                             <p class="simplenav">
                                 <a href="#">Home</a> | 
                                 <a href="/plans">Plans</a> |
-                                <a href="/contact">Contact</a> |
-                                <b><a href="/login">Sign up</a></b>
+                                <a href="/contact">Contact</a> 
+                        
                             </p>
                         </div>
                     </div>
