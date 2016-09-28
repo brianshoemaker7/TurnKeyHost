@@ -87,7 +87,7 @@ curl_close($ch);
 // Send an email with the Postmark-PHP library 
 
 // Create the confirmation subject variable
-$subject = 'Confirmation and Login Instructions'
+$subject = 'Confirmation and Login Instructions';
  
 // Create the confirmation message variable
 
