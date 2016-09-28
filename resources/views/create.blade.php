@@ -58,8 +58,6 @@
                             </div>
                         </div>
 
-                        <input id="password" name="password" type="password" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Must have at least 6 characters' : ''); if(this.checkValidity()) form.password_confirmation.pattern = this.value;" placeholder="Password" required>
-
                         <div class="form-group">
                             <label for="password_confirmation" class="col-md-4 control-label">Confirm Password</label>
 
@@ -86,13 +84,12 @@
                             <label for="package" class="col-md-4 control-label">Package</label>
 
                             <div class="col-md-6">
-                            <select name="package">
+                            <select name="package" id="package" class="form-control" required>
                                   <option value="starter">Starter</option>
                                   <option value="business">Business</option>
                                   <option value="enterprise">Enterprise</option>
                                   <option value="reseller">Reseller</option>
                                 </select>
-                                <input id="package" type="text" class="form-control" required>
                             </div>
                         </div>
 
