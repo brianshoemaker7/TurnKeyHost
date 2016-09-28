@@ -4,7 +4,7 @@
 <header id="head">
         <div class="container">
             <div class="row">
-                <h1 class="lead">HOSTING DONE RIGHT.</h1>
+                <h1 class="lead">HOSTING DONE! RIGHT.</h1>
                 <p class="tagline">Because you already have enough things to worry about.</p>
                 <p><a class="btn btn-action btn-lg" role="button" href="/Account/create">Get Started »</a></p> 
 
