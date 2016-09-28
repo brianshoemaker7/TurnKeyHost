@@ -26,7 +26,7 @@
 
 
                         <div class="jumbotron top-space">
-            <h4>You will receive an email shortly with login information for your new web space. if you have any questions please use our contact form and we will be happy to help you.</h4>
+            <h4>You will receive an email shortly with login information for your new web space. If you have any questions please reply to the email or fill out our contact form and we will be happy to help you.</h4>
             <p class="text-right"><a class="btn btn-primary btn-large" href="/">Return Home »</a></p>
         </div>
 
